@@ -29,8 +29,7 @@ Fraud is rare but costly. Only **0.17%** of transactions are fraudulent, so a na
 
 ## 📁 Dataset
 
-- **Source:** [Kaggle: Credit Card Fraud Detection (ULB)](https://www.kaggle.com/datasets/mlg-ulb/creditcardfraud)
-- **Size:** 284,807 transactions × 31 columns, covering two days of card activity
+- **Source:** Credit Card Fraud Detection `creditcard_compressed.zip`- **Size:** 284,807 transactions × 31 columns, covering two days of card activity
 - **Fraud cases:** 492 (0.173%)
 - **Features:** `Time` (seconds since first transaction), `Amount`, `Class` (0 = legit, 1 = fraud), and `V1–V28` (anonymised PCA components)
 - **Data quality:** 0 null values, 1,081 duplicate rows
@@ -103,14 +102,27 @@ Fraud is rare but costly. Only **0.17%** of transactions are fraudulent, so a na
 ## 📂 Repository Structure
 
 ```
-
+Credit-Card-Fraud-Detection/
+│
+├── 📊 dashboard/
+│   ├── Credit_Card_Fraud_Detection.pbix   # Power BI dashboard (FraudShield)
+│   ├── 01_overview.png                    # Page 1 – Overview
+│   ├── 02_fraud_patterns.png              # Page 2 – Fraud Patterns
+│   └── 03_alert_rules.png                 # Page 3 – Alert Rules
+│
+├── 🐍 cleaning_code.ipynb                 # Python (pandas) data cleaning & EDA
+│
+├── 🗂️ creditcard_compressed.zip           # Raw dataset (compressed)
+├── 🗂️ fraud_clean-compressed.zip          # Cleaned dataset (compressed)
+│
+└── 📄 README.md                           # Project documentation
 ```
 
 ---
 
 ## 🚀 How to Run
 
-1. Download `creditcard.csv` from [Kaggle](https://www.kaggle.com/datasets/mlg-ulb/creditcardfraud) and place it in the project folder.
+1. Download `creditcard.csv` from `creditcard_compressed.zip` and place it in the project folder.
 2. Install dependencies:
    ```bash
    pip install pandas numpy matplotlib jupyter
