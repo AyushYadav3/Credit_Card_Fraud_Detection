@@ -12,8 +12,7 @@ An end-to-end data analytics project for the **BFSI (Banking, Financial Services
 
 | Overview | Fraud Patterns | Alert Rules |
 |---|---|---|
-| (images/01_overview.png) | (images/02_fraud_patterns.png) | (images/03_alert_rules.png) |
-
+| ![Overview](01_overview.png) | ![Fraud Patterns](02_fraud_patterns.png) | ![Alert Rules](03_alert_rules.png) |
 ---
 
 ## 🎯 Business Problem
@@ -30,7 +29,7 @@ Fraud is rare but costly. Only **0.17%** of transactions are fraudulent, so a na
 ## 📁 Dataset
 
 - **Source:** Credit Card Fraud Detection dataset (ULB / Worldline, via Kaggle), provided as `creditcard_compressed.zip`
-- - **Size:** 284,807 transactions × 31 columns, covering two days of card activity
+- **Size:** 284,807 transactions × 31 columns, covering two days of card activity
 - **Fraud cases:** 492 (0.173%)
 - **Features:** `Time` (seconds since first transaction), `Amount`, `Class` (0 = legit, 1 = fraud), and `V1–V28` (anonymised PCA components)
 - **Data quality:** 0 null values, 1,081 duplicate rows
