@@ -12,7 +12,7 @@ An end-to-end data analytics project for the **BFSI (Banking, Financial Services
 
 | Overview | Fraud Patterns | Alert Rules |
 |---|---|---|
-| ![Overview](images/01_overview.png) | ![Fraud Patterns](images/02_fraud_patterns.png) | ![Alert Rules](images/03_alert_rules.png) |
+| (images/01_overview.png) | (images/02_fraud_patterns.png) | (images/03_alert_rules.png) |
 
 ---
 
@@ -34,7 +34,7 @@ Fraud is rare but costly. Only **0.17%** of transactions are fraudulent, so a na
 - **Features:** `Time` (seconds since first transaction), `Amount`, `Class` (0 = legit, 1 = fraud), and `V1–V28` (anonymised PCA components)
 - **Data quality:** 0 null values, 1,081 duplicate rows
 
-> The raw `creditcard.csv` is not included in this repo because of its size. Download it from Kaggle and place it in the project folder.
+> The raw `creditcard.csv` is included in this repo. It is compressed because of its size. Download it from `creditcard_compressed.zip` and place it in the project folder.
 
 **Note on "demographics":** the dataset has no age, gender or location. As a substitute, I profiled fraud using the deviation of the anonymised `V` features between fraud and legitimate transactions.
 
